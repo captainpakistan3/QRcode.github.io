@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Ban Gaya! | Link to QR Code Generator</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23764ba2%22/><rect x=%2218%22 y=%2218%22 width=%2222%22 height=%2222%22 fill=%22white%22/><rect x=%2224%22 y=%2224%22 width=%2210%22 height=%2210%22 fill=%22%23764ba2%22/><rect x=%2260%22 y=%2218%22 width=%2222%22 height=%2222%22 fill=%22white%22/><rect x=%2266%22 y=%2224%22 width=%2210%22 height=%2210%22 fill=%22%23764ba2%22/><rect x=%2218%22 y=%2260%22 width=%2222%22 height=%2222%22 fill=%22white%22/><rect x=%2224%22 y=%2266%22 width=%2210%22 height=%2210%22 fill=%22%23764ba2%22/><rect x=%2260%22 y=%2260%22 width=%2210%22 height=%2210%22 fill=%22white%22/><rect x=%2276%22 y=%2260%22 width=%2210%22 height=%2210%22 fill=%22white%22/><rect x=%2260%22 y=%2276%22 width=%2210%22 height=%2210%22 fill=%22white%22/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome / Splash Screen -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-content">
+      <div class="logo-badge">
+        <svg viewBox="0 0 100 100" width="70" height="70">
+          <rect width="100" height="100" rx="20" fill="#ffffff"/>
+          <rect x="18" y="18" width="22" height="22" fill="#764ba2"/>
+          <rect x="24" y="24" width="10" height="10" fill="#ffffff"/>
+          <rect x="60" y="18" width="22" height="22" fill="#764ba2"/>
+          <rect x="66" y="24" width="10" height="10" fill="#ffffff"/>
+          <rect x="18" y="60" width="22" height="22" fill="#764ba2"/>
+          <rect x="24" y="66" width="10" height="10" fill="#ffffff"/>
+          <rect x="60" y="60" width="10" height="10" fill="#764ba2"/>
+          <rect x="76" y="60" width="10" height="10" fill="#764ba2"/>
+          <rect x="60" y="76" width="10" height="10" fill="#764ba2"/>
+        </svg>
+      </div>
+      <h1 class="welcome-title">Welcome My Friend 👋</h1>
+      <p class="welcome-subtitle">Apne links ko chand seconds mein QR code mein badlein</p>
+      <button id="enterBtn" class="enter-btn">Shuru Karein ➜</button>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="sky"></div>
+    <div class="mountain mountain-back"></div>
+    <div class="mountain mountain-front"></div>
+    <div class="waterfall">
+      <div class="water-stream"></div>
+      <div class="water-stream"></div>
+      <div class="water-stream"></div>
+      <div class="water-stream"></div>
+      <div class="mist"></div>
+    </div>
+    <div class="river"></div>
+  </div>
+
+  <div class="container">
+    <h1>🔗 Link ➜ QR Code</h1>
+    <p class="subtitle">Koi bhi link paste karein aur QR code bana lein</p>
+
+    <div class="input-group">
+      <input type="text" id="linkInput" placeholder="https://example.com" />
+      <button id="generateBtn">QR Bnayein</button>
+    </div>
+
+    <div id="qrResult" class="qr-result"></div>
+
+    <button id="downloadBtn" class="download-btn hidden">⬇️ QR Download Karein</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
